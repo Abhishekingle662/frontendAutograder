@@ -5,9 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Acme Rockets</title>
+  <title>Grade.ai</title>
+  <link rel="icon" href="./img/favi_icon.jpeg">
   <link rel="stylesheet" href="css/styles.css" />
   <script src="js/main.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
@@ -18,49 +20,54 @@
       </h1>
       <div>
         <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
-          <!-- &#9776; -->
-          <div
-            class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
-          </div>
+          <div class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']"></div>
         </button>
         <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
           <a href="#rockets" class="hover:opacity-90">Features</a>
           <a href="#contact" class="hover:opacity-90">Contact Us</a>
         </nav>
-      </div>
+      </div> 
     </section>
-    <section id="mobile-menu"
-      class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
-      <!-- <button class="text-8xl self-end px-6">
-                &times;
-            </button> -->
+    
+    <section id="mobile-menu" class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
       <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
         <a href="#hero" class="w-full py-6 text-center hover:opacity-90">Home</a>
         <a href="#rockets" class="w-full py-6 text-center hover:opacity-90">Features</a>
         <a href="#contact" class="w-full py-6 text-center hover:opacity-90">Contact Us</a>
         <a href="#footer" class="w-full py-6 text-center hover:opacity-90">Legal</a>
       </nav>
+      <!-- Hamburger menu icon -->
+      <button id="menu-icon" class="text-white p-2 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 5h14a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2zm0 6h14a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2zm0 6h14a1 1 0 1 1 0 2H3a1 1 0 1 1 0-2z"/>
+        </svg>
+      </button>
     </section>
+    
+    
   </header>
+  
   <main class="mx-auto max-w-4xl">
-    <section id="hero"
-      class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row">
+    <section id="hero" class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row">
       <article class="sm:w-1/2">
         <h2 class="max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl">
-          We Boldy Go
-          <span class="text-indigo-700 dark:text-indigo-300">Where No Rocket</span>
-          Has Gone Before...
+          Elevate Your Learning Journey with
+          <span class="text-indigo-700 dark:text-indigo-300">Grade.ai</span>
         </h2>
-        <p class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left">
-          We're building rockets for the next century today. From the moon to
-          Mars, Jupiter and beyond...
+       
+        <p class="mt-4 max-w-md text-center text-1xl text-slate-700 dark:text-slate-400 sm:text-left">
+          From comprehensive feedback to personalized study sessions, Grade.ai empowers professors and students alike.
         </p>
-        <p class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left">
-          Think Acme Rockets.
+        <p class="mt-4 max-w-md text-center text-1xl text-slate-700 dark:text-slate-400 sm:text-left">
+          Unlock your potential, refine your skills, and embrace the future of education with Grade.ai.
+        </p>
+        <p class="mt-4 max-w-md text-center text-1xl text-slate-700 dark:text-slate-400 sm:text-left">
+          Think Innovation. Think Precision. Think Grade.ai.
         </p>
       </article>
-      <img class="w-1/2" src="./img/loading.gif" alt="Rocket Dab" />
+      <img class="w-1/2 rounded-3xl border border-solid border-slate-900" src="./img/robot-hi.gif" alt="Robot Hi" />
     </section>
+    
 
     <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
@@ -69,84 +76,89 @@
         Features
       </h2>
       <ul class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row">
-        <li
-          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
-          <img src="./img/generate.gif" alt="Explorer" class="mb-6 w-1/2 border-2 border-blue-300 rounded-xl" />
-          <h3 class="text-center text-3xl text-slate-900 dark:text-white">
-            Explorer
-          </h3>
-          
-          <p class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden">
-            Affordable Exploration
-          </p>
+        <li class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          <div class="flex items-center justify-center w-full">
+            <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+              <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+                </svg>
+                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Upload Submission file</span></p>
+              </div>
+              <input id="dropzone-file" type="file" class="hidden" />
+            </label>
+          </div>
         </li>
-        <li
-          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
-          <img src="./img/rocketride.png" alt="Adventurer" class="mb-6 w-1/2" />
-          <h3 class="text-center text-3xl text-slate-900 dark:text-white">
-            Adventurer
-          </h3>
-          <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block">
-            $$
-          </p>
-          <p class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden">
-            Best Selling Rocket!
-          </p>
-        </li>
-        <li
-          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
-          <img src="./img/rocketlaunch.png" alt="Infinity" class="mb-6 w-1/2" />
-          <h3 class="text-center text-3xl text-slate-900 dark:text-white">
-            Infinity
-          </h3>
-          <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block">
-            $$$
-          </p>
-          <p class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden">
-            Luxury Starship
-          </p>
+        <li class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          <div class="flex items-center justify-center w-full">
+            <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-bray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+              <div class="flex flex-col items-center justify-center pt-5 pb-6">
+                <svg class="w-8 h-8 mb-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 16">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"/>
+                </svg>
+                <p class="mb-2 text-sm text-gray-500 dark:text-gray-400"><span class="font-semibold">Upload evaluation criterion</span></p>
+              </div>
+              <input id="dropzone-file" type="file" class="hidden" />
+            </label>
+          </div>
         </li>
       </ul>
     </section>
 
-
-    <section id="contact" class="widescreen:section-min-height tallscreen:section-min-height my-6 scroll-mt-8 p-4">
-        <h2 class="mb-4 text-center text-3xl font-bold text-slate-500 dark:text-white sm:text-2xl">
-          Contact Us
-        </h2>
-        <form action="" class="items-left mx-auto flex max-w-lg flex-col gap-2 text-lg sm:text-xl">
-          <label for="subject">Subject:</label>
-          <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject"
-            class="w-full rounded-lg border border-solid border-slate-900 p-2 text-lg text-black dark:border-none sm:text-xl" />
-          <label for="message">Message:</label>
-          <textarea name="message" id="message" cols="30" rows="6" placeholder="Your Message" required
-            class="w-full rounded-lg border border-solid border-slate-900 p-2 text-lg text-black dark:border-none sm:text-xl"></textarea>
-          <button
-            class="w-32 rounded-lg border border-solid border-slate-900 bg-teal-700 p-2 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none">
-            Submit
-          </button>
-        </form>
-      </section>
+    <section class="w-full max-w-2xl mx-auto p-6 bg-white dark:bg-gray-800 rounded-lg shadow-md">
+      <p class="text-center text-2xl font-bold text-slate-700 dark:text-slate-400 mb-8">We're Here to Help!</p>
       
+      <form class="space-y-6">
+        <div class="flex flex-col sm:flex-row sm:space-x-4">
+          <input type="text" placeholder="First name*" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" />
+          <input type="text" placeholder="Last Name*" required class="w-full p-3 mt-4 sm:mt-0 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" />
+        </div>
+        <input type="email" placeholder="Email address*" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" />
+        
+        <div class="flex flex-col sm:flex-row sm:space-x-4">
+          <select required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500">
+            <option value="" disabled selected>Job role</option>
+            <option value="Professor">Professor</option>
+            <option value="Student">Student</option>
+            <option value="Other">Other</option>
+          </select>
+          <input type="text" placeholder="Company domain*" required class="w-full p-3 mt-4 sm:mt-0 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" />
+        </div>
+        
+        <textarea placeholder="Please tell us a bit about your goals, what are you hoping to achieve with Grade.ai?" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+        
+        <div class="text-sm text-slate-600 dark:text-slate-400">
+          We will store and process your personal data on terms defined <a href="#" class="text-teal-500 underline">here</a>.
+        </div>
+        
+        <button type="submit" class="w-full p-3 mt-6 bg-gray-500 text-white font-bold rounded-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-500">Send</button>
+      </form>
+    </section>
   </main>
 
-  <footer id="footer" class="bg-teal-700 text-xl text-white">
-    <section class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
-      <address>
-        <h2>Grade.ai</h2>
-        UC Berkeley<br />
-        
-        Email:
-        <a href="mailto:inquiries@acmerockets.com">Inquires@AcmeRockets.com</a><br />
-        Phone: <a href="tel:+15555555555">(555) 555-5555</a>
+  <!-- Footer Section -->
+  <footer id="footer" class="bg-teal-800 text-lg text-white py-8">
+    <section class="mx-auto flex flex-col items-center justify-center max-w-4xl p-4 sm:flex-row sm:justify-between sm:items-center">
+      <address class="not-italic mb-4 sm:mb-0 sm:mr-8">
+        <h2 class="text-2xl font-bold">Grade.ai</h2>
+        <p>UC Berkeley</p>
+        <p>
+          Email: 
+          <a href="mailto:inquiries@acmerockets.com" class="text-blue-300 hover:underline">Inquiries@AcmeRockets.com</a>
+        </p>
       </address>
-      
-      <div class="flex flex-col sm:gap-2">
-        <p class="text-right">Copyright &copy; <span id="year">2022</span></p>
-        <p class="text-right">All Rights Reserved</p>
+      <div class="flex flex-col items-center sm:flex-row sm:items-center">
+        <p class="mb-2 sm:mb-0">&copy; <span id="year"></span> Grade.ai</p>
+        <p class="hidden sm:block mx-2">|</p>
+        <p class="sm:ml-2">All Rights Reserved</p>
       </div>
     </section>
   </footer>
+  
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
