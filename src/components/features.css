@@ -1,6 +1,6 @@
-.input {
+.featureinput {
     width: 100%;
-    height: 200px; /* Set the desired height */
+    height: 500px; /* Set the desired height */
     padding: 8px; /* Add padding for better readability */
     font-size: 16px; /* Set the font size */
     border: 1px solid #ccc; /* Add a border for better visibility */
@@ -14,3 +14,24 @@
 .input_inner_box {
     padding: 50px;
 }
+
+.feature_div{
+    width: 200%;
+    position: relative;
+    right: 50%;
+    background-color: rgb(29, 94, 85);
+}   
+
+
+.inner_feature_box{
+    width: 80%;
+}
+
+.featureinput{
+    background-color:#349395;
+    font-family: monospace;
+    font-size: 1.0rem;;
+    color: white;
+    
+}
+

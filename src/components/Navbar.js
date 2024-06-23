@@ -23,7 +23,7 @@ const Header = () => {
             </svg>
           </button>
           <nav className={`nav-links ${isMenuOpen ? 'show' : ''}`} aria-label="main">
-            <a href="#rockets" className="nav-link">Features</a>
+            <a href="#features" className="nav-link">Features</a>
             <a href="#contact" className="nav-link">Contact Us</a>
           </nav>
         </div>
@@ -32,7 +32,7 @@ const Header = () => {
       <section id="mobile-menu" className={`mobile-menu ${isMenuOpen ? 'show' : ''}`}>
         <nav className="mobile-nav-links" aria-label="mobile">
           <a href="#hero" className="mobile-nav-link">Home</a>
-          <a href="#rockets" className="mobile-nav-link">Features</a>
+          <a href="#features" className="mobile-nav-link">Features</a>
           <a href="#contact" className="mobile-nav-link">Contact Us</a>
           <a href="#footer" className="mobile-nav-link">Legal</a>
         </nav>

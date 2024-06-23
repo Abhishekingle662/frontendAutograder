@@ -31,14 +31,16 @@ const FeaturesSection = () => {
   };
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-slate-50 dark:bg-gray-800">
-      <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row">
-        <li className="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
-          <div className="flex py-16 px-16 items-center justify-center w-full">
-            <div className="w-full text-black ">
-              <input
-                type="text"
-                className="input"
+    
+    <div className="min-h-screen feature_div w-100 flex justify-center items-center bg-black-800">
+      <ul className="mx-auto inner_feature_box my-12 flex list-none flex-col items-center gap-8 sm:flex-row">
+        <li className="flex inner_inner_fox w-2/3 px-6 flex-col items-center rounded-3xl bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+        
+           
+          <div className="flex py-16 px-16 inner_tablet_one items-center justify-center w-full">
+            <div className="w-full inner_tablet_thing text-black ">
+              <textarea
+                className="featureinput"
                 placeholder="Enter Submission Text"
                 value={text1}
                 onChange={handleText1Change}
@@ -52,12 +54,11 @@ const FeaturesSection = () => {
             </div>
           )}
         </li>
-        <li className="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
-          <div className="flex py-16 px-16 items-center justify-center w-full">
+        <li className="flex w-2/3 flex-col items-center py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          <div className="flex py-16 px-16 inner_tablet_one items-center justify-center w-full">
             <div className="w-full text-black">
-              <input
-                type="text"
-                className="input"
+              <textarea
+                className="featureinput"
                 placeholder="Enter Evaluation Text"
                 value={text2}
                 onChange={handleText2Change}
