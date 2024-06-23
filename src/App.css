@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* General styles for the entire website */
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #2D3748; /* Text color */
+  background-color: #F7FAFC; /* Light background color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: #4FD1C5; /* Teal color for links */
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#menu-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#menu-icon svg {
+  fill: white;
+}
+
+#menu-icon:hover svg {
+  fill: gray;
+}
+
+header {
+  background-color: #349395; /* Teal header background */
+  color: white;
+  
+}
+
+header a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+header nav a {
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header nav a:hover {
+  opacity: 0.8;
+}
+
+button {
+  background-color: #2C7A7B; /* Teal button background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #285E61; /* Darker teal on hover */
+}
+
+button:active {
+  background-color: #234E52; /* Even darker teal on active */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #CBD5E0; /* Gray border */
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4FD1C5; /* Teal border on focus */
+  box-shadow: 0 0 5px rgba(79, 209, 197, 0.5); /* Teal shadow on focus */
+}
+
+footer {
+  background-color: #399c9e; /* Teal footer background */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer address {
+  margin: 0;
+}
+
+footer a {
+  color: #B2F5EA; /* Lighter teal for footer links */
+}
+
+footer a:hover {
+  color: #4FD1C5; /* Teal on hover */
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #CBD5E0; /* Light gray horizontal rule */
+  margin: 40px 0;
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+  header nav {
+    display: flex;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  header nav a {
+    margin: 0 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
   }
 }

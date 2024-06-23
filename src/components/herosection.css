@@ -1,0 +1,39 @@
+.hero-section {
+    min-height: 40rem; /* Set a minimum height for the section */
+    margin-bottom: 12rem; /* Add margin at the bottom */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .hero-content {
+    width: 100%;
+    max-width: 40rem; /* Limit the width of the content */
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: #4FD1C5; /* Highlight color */
+  }
+  
+  .hero-text {
+    font-size: 1rem;
+    text-align: center;
+    color: #707b8e; /* Text color */
+  }
+  
+  .hero-image {
+    width: 50%;
+    border: 2px solid #2D3748; /* Border color */
+    border-radius: 1rem; /* Rounded corners */
+  }
+  

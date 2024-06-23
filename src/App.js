@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+// src/App.js
+
+import React from 'react';
+import Navbar from './components/Navbar';
+import HeroSection from './components/Herosection';
+import FeaturesSection from './components/Featuresection';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
+import DataDisplayComponent from './components/DataDisplay';
+import GoogleAuth from './components/oauth';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+      <Navbar />
+      <main className="mx-auto max-w-4xl">
+        <HeroSection />
+        <FeaturesSection />
+        <DataDisplayComponent />
+        <GoogleAuth /> {/* Add GoogleAuth component here */}
+        <ContactForm />
+      </main>
+      <Footer />
     </div>
   );
 }

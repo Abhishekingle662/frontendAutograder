@@ -1,0 +1,25 @@
+.bg-blue-500{
+    position: relative;
+    bottom: 30px;
+    left: 42.5px;
+}
+
+.bg-red-500{
+    position: relative;
+    right: 50px;
+    top:20px;
+}
+
+.dropzone-file1{
+    padding: 50px;
+}
+
+.input_inner_box{
+    padding: 50px;
+    
+}
+
+.mb-2 {
+    position: relative;
+    top: 15px;
+}

@@ -1,0 +1,188 @@
+body {
+    background-color: #121212;
+}
+
+.o-page {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+svg{
+  position: relative;
+  top: 30px;
+}
+
+p {
+    color: var(--white87);
+    font-family: roboto;
+    text-align: center;
+    margin-top: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.skill-set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-set .skill-outer {
+    display: block;
+}
+
+.skill-set svg {
+    max-width: 150px;
+    height: auto;
+    width: 100%;
+}
+
+  
+  /* Infographic */
+  @keyframes leftSide3 {
+    from {
+      d: path("M53.18 76.81h22.6v36.53h-22.6z");
+    }
+    to {
+      d: path("M53.18 32.15h22.6v81.19h-22.6z");
+    }
+  }
+  
+  @keyframes leftSide2 {
+    from {
+      d: path("M53.18 76.81l-9.46 8.22v36.52l9.46-8.21V76.81z");
+    }
+    to {
+      d: path("M53.18 32.15l-9.46 8.21v81.19l9.46-8.21V32.15z");
+    }
+  }
+  
+  @keyframes leftSide1 {
+    from {
+      d: path("M30.57 76.81v36.53");
+    }
+    to {
+      d: path("M30.57 32.15v81.19");
+    }
+  }
+  
+  @keyframes leftTop {
+    from {
+      d: path("M43.72 85l9.46-8.22h22.6c0-5-10.2-9-22.6-9s-22.6 4.09-22.6 9c0 3.53 5.14 6.74 13.14 8.22");
+    }
+    to {
+      d: path("M43.72 40.36l9.46-8.21h22.6c0-5-10.2-9-22.6-9s-22.6 4.08-22.6 9c0 3.52 5.14 6.74 13.14 8.21");
+    }
+  }
+  
+  @keyframes rightSide3 {
+    from {
+      d: path("M129.43 31.73v79.28");
+    }
+    to {
+      d: path("M129.43 80.41v30.6");
+    }
+  }
+  
+  @keyframes rightSide2 {
+    from {
+      d: path("M106.82 31.73l9.46 8.22v79.27l-9.46-8.21V31.73z");
+    }
+    to {
+      d: path("M106.82 80.42l9.46 8.21v30.59l-9.46-8.21V80.42z");
+    }
+  }
+  
+  @keyframes rightSide1 {
+    from {
+      d: path("M84.22 31.73h22.6V111h-22.6z");
+    }
+    to {
+      d: path("M84.22 80.41h22.6V111h-22.6z");
+    }
+  }
+  
+  @keyframes rightTop {
+    from {
+      d: path("M116.28 40l-9.46-8.22h-22.6c0-5 10.2-9 22.6-9s22.6 4.08 22.6 9c0 3.53-5.14 6.74-13.14 8.22");
+    }
+    to {
+      d: path("M116.28 88.63l-9.46-8.22h-22.6c0-5 10.2-9 22.6-9s22.6 4.08 22.6 9c0 3.53-5.14 6.74-13.14 8.22");
+    }
+  }
+  
+  .left-side3 {
+    animation: leftSide3 3s ease-out infinite alternate;
+  }
+  
+  .left-side2 {
+    animation: leftSide2 3s ease-out infinite alternate;
+  }
+  
+  .left-side1 {
+    animation: leftSide1 3s ease-out infinite alternate;
+  }
+  
+  .left-top {
+    animation: leftTop 3s ease-out infinite alternate;
+  }
+  
+  .right-side3 {
+    animation: rightSide3 3s ease-out infinite alternate;
+  }
+  
+  .right-side2 {
+    animation: rightSide2 3s ease-out infinite alternate;
+  }
+  
+  .right-side1 {
+    animation: rightSide1 3s ease-out infinite alternate;
+  }
+  
+  .right-top {
+    animation: rightTop 3s ease-out infinite alternate;
+  }
+  
+  .infographic {
+    &:hover,
+    &:focus {
+      text {
+        animation: rainbow-color-fill 1s linear infinite;
+      }
+  
+      .left-bottom,
+      .right-bottom {
+        stroke: #FFB9B9;
+      }
+  
+      .left-side3,
+      .right-side3 {
+        stroke: #DAB9FF;
+      }
+      .left-side2,
+      .right-side2 {
+        stroke: #FFB9B9;
+      }
+  
+      .left-side1,
+      .right-side1 {
+        stroke: #FFFEB9;
+      }
+  
+      .left-top,
+      .right-top {
+        stroke: #B9FFCC;
+      }
+      .ellipse0 {
+        stroke: #B9C9FF;
+      }
+      .ellipse {
+        stroke: transparent;
+      }
+    }
+  }
+  
